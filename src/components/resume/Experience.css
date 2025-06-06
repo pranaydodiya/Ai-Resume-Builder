@@ -1,0 +1,136 @@
+.experience-section {
+  animation: fadeIn 0.4s ease-out;
+}
+
+.experience-list {
+  margin-bottom: var(--space-6);
+}
+
+.experience-item {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-4);
+  background-color: var(--neutral-50);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-3);
+  border-left: 3px solid var(--primary-500);
+}
+
+.experience-content {
+  flex: 1;
+}
+
+.experience-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: var(--space-1);
+}
+
+.experience-company {
+  font-weight: 500;
+  color: var(--neutral-700);
+  margin-bottom: var(--space-1);
+}
+
+.experience-period {
+  font-size: 0.875rem;
+  color: var(--neutral-600);
+  margin-bottom: var(--space-2);
+}
+
+.experience-description {
+  font-size: 0.9375rem;
+  color: var(--neutral-700);
+  white-space: pre-line;
+}
+
+.experience-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-left: var(--space-4);
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--neutral-100);
+  color: var(--neutral-600);
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.btn-icon:hover {
+  background-color: var(--neutral-200);
+  color: var(--neutral-800);
+}
+
+.btn-delete:hover {
+  background-color: var(--error-100);
+  color: var(--error-600);
+}
+
+.experience-form {
+  background-color: var(--neutral-50);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.form-subtitle {
+  font-size: 1.125rem;
+  margin-bottom: var(--space-4);
+  color: var(--neutral-800);
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+  font-size: 0.875rem;
+  color: var(--neutral-700);
+}
+
+.form-checkbox input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+.experience-form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-3);
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--space-4);
+}
+
+@media (max-width: 768px) {
+  .experience-item {
+    flex-direction: column;
+  }
+  
+  .experience-actions {
+    flex-direction: row;
+    margin-left: 0;
+    margin-top: var(--space-3);
+  }
+  
+  .navigation-buttons {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  
+  .navigation-buttons button {
+    width: 100%;
+  }
+}

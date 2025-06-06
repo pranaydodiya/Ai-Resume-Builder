@@ -1,0 +1,453 @@
+.career-guidance-page {
+  padding-top: var(--space-10);
+}
+
+/* Career Paths Grid */
+.career-paths-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+.career-path-card {
+  background-color: white;
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.career-path-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.path-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  background-color: var(--primary-100);
+  color: var(--primary-600);
+  font-size: 24px;
+  margin-bottom: var(--space-4);
+}
+
+.path-title {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-2);
+  color: var(--neutral-800);
+}
+
+.path-description {
+  color: var(--neutral-600);
+  margin-bottom: var(--space-4);
+  flex-grow: 1;
+}
+
+.path-skills {
+  margin-bottom: var(--space-4);
+}
+
+.skills-title {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--neutral-500);
+  margin-bottom: var(--space-2);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.path-skill {
+  background-color: var(--neutral-100);
+  color: var(--neutral-700);
+  padding: var(--space-1) var(--space-2);
+  border-radius: 20px;
+  font-size: 0.875rem;
+}
+
+.path-button {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+/* Career Path Detail */
+.career-path-detail {
+  margin-bottom: var(--space-8);
+}
+
+.back-button {
+  margin-bottom: var(--space-4);
+  padding-left: 0;
+}
+
+.path-detail-title {
+  font-size: 2rem;
+  margin-bottom: var(--space-6);
+  color: var(--neutral-800);
+  text-align: center;
+}
+
+.path-detail-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+}
+
+.path-description-card,
+.quiz-intro-card {
+  background-color: white;
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-md);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-4);
+  color: var(--neutral-800);
+}
+
+.card-description {
+  margin-bottom: var(--space-4);
+  color: var(--neutral-600);
+  line-height: 1.6;
+}
+
+.skills-heading {
+  font-size: 1.125rem;
+  margin-bottom: var(--space-3);
+  color: var(--neutral-700);
+}
+
+.path-detail-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.path-detail-skill {
+  background-color: var(--primary-50);
+  color: var(--primary-700);
+  padding: var(--space-1) var(--space-3);
+  border-radius: 20px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+
+.start-quiz-btn {
+  margin-top: var(--space-4);
+  width: 100%;
+}
+
+/* Quiz Container */
+.quiz-container {
+  max-width: 800px;
+  margin: 0 auto var(--space-8);
+}
+
+.quiz-progress {
+  margin-bottom: var(--space-4);
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--space-2);
+  color: var(--neutral-600);
+  font-size: 0.9375rem;
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: var(--neutral-200);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: var(--primary-500);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.quiz-question-card {
+  background-color: white;
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-md);
+}
+
+.question-text {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-6);
+  color: var(--neutral-800);
+}
+
+.answer-options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.answer-option {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--neutral-200);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-normal);
+  cursor: pointer;
+}
+
+.answer-option:hover {
+  background-color: var(--neutral-50);
+  border-color: var(--neutral-300);
+}
+
+.answer-option.selected {
+  background-color: var(--primary-50);
+  border-color: var(--primary-400);
+}
+
+.option-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--neutral-100);
+  color: var(--neutral-700);
+  font-weight: 600;
+  transition: all var(--transition-normal);
+}
+
+.answer-option.selected .option-marker {
+  background-color: var(--primary-600);
+  color: white;
+}
+
+.option-text {
+  flex: 1;
+}
+
+.quiz-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Feedback Container */
+.feedback-container {
+  margin-bottom: var(--space-8);
+}
+
+.feedback-header {
+  text-align: center;
+  margin-bottom: var(--space-6);
+}
+
+.feedback-title {
+  font-size: 2rem;
+  color: var(--neutral-800);
+}
+
+.feedback-card {
+  background-color: white;
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-md);
+  margin-bottom: var(--space-6);
+}
+
+.feedback-score-section {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  padding-bottom: var(--space-6);
+  margin-bottom: var(--space-6);
+  border-bottom: 1px solid var(--neutral-200);
+}
+
+.feedback-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: white;
+  font-weight: 700;
+}
+
+.score-excellent {
+  background-color: var(--success-500);
+}
+
+.score-good {
+  background-color: var(--warning-500);
+}
+
+.score-needs-improvement {
+  background-color: var(--error-500);
+}
+
+.score-number {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.score-total {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+.score-description {
+  flex: 1;
+}
+
+.score-text {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-2);
+  text-transform: capitalize;
+}
+
+.score-text.excellent {
+  color: var(--success-600);
+}
+
+.score-text.good {
+  color: var(--warning-600);
+}
+
+.score-text.needs-improvement {
+  color: var(--error-600);
+}
+
+.score-message {
+  color: var(--neutral-700);
+  line-height: 1.6;
+}
+
+.guidance-section {
+  color: var(--neutral-700);
+}
+
+.guidance-title,
+.resources-title {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-3);
+  color: var(--neutral-800);
+}
+
+.guidance-text {
+  margin-bottom: var(--space-6);
+  line-height: 1.6;
+}
+
+.resources-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--space-4);
+}
+
+.resource-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--neutral-50);
+  border-radius: var(--radius-md);
+  color: var(--neutral-800);
+  text-decoration: none;
+  transition: all var(--transition-normal);
+}
+
+.resource-link:hover {
+  background-color: var(--primary-50);
+  transform: translateY(-2px);
+}
+
+.resource-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: var(--neutral-200);
+  color: var(--neutral-600);
+  font-size: 20px;
+}
+
+.resource-title {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.feedback-actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .career-paths-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .path-detail-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+  
+  .feedback-score-section {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .quiz-question-card,
+  .feedback-card {
+    padding: var(--space-4);
+  }
+  
+  .quiz-navigation {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  
+  .quiz-navigation button {
+    width: 100%;
+  }
+  
+  .resources-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .feedback-actions {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  
+  .feedback-actions button {
+    width: 100%;
+  }
+}
