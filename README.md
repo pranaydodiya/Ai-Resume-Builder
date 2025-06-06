@@ -10,3 +10,4 @@ Currently, two official plugins are available:
 "# Ai-Resume-Builder" 
 "# Ai-Resume-Builder" 
 "# Ai-Resume-Builder" 
+"# Ai-Resume-Builder" 
