@@ -2,7 +2,7 @@
 
 An advanced AI-powered Resume & Career Toolkit built entirely with React.js and powered by the Google Gemini API. This platform enables users to build professional resumes, generate intelligent cover letters, check ATS compatibility, and receive personalized career guidance including a quiz — all from a clean, user-friendly interface.
 
-🔗 Live Project: https://ai-powered-resumebuilder.netlify.app/
+# 🔗 Live Project: https://ai-powered-resumebuilder.netlify.app/
 
 ---
 
